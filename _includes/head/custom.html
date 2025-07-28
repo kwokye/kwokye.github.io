@@ -14,4 +14,36 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Support for particle effect-->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {"value": 80, "density": {"enable": true, "value_area": 800}},
+        "color": {"value": "#6366f1"},
+        "shape": {"type": "circle"},
+        "opacity": {"value": 0.5, "random": true},
+        "size": {"value": 3, "random": true},
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#8b5cf6",
+          "opacity": 0.2,
+          "width": 1
+        },
+        "move": {"enable": true, "speed": 1, "direction": "none", "random": true}
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {"enable": true, "mode": "grab"},
+          "onclick": {"enable": true, "mode": "push"},
+          "resize": true
+        }
+      }
+    });
+  });
+</script>
+
 <!-- end custom head snippets -->
