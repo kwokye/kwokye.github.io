@@ -6,38 +6,100 @@
 // Helper to fetch text content with error handling
 async function fetchMarkdown(url) {
   try {
-    const res = await fetch(url + '?v=' + Date.now()); // cache-busting during dev
-    if (!res.ok) throw new Error(`HTTP ${res.status} when fetching ${url}`);
+    const res = await fetch(url + '?t=' + Date.now());
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status} when fetching ${url}`);
+    }
     return await res.text();
   } catch (err) {
-    console.warn(`Could not load ${url}:`, err);
+    console.error(`Could not load ${url}:`, err);
     return null;
   }
+}
+
+// Built-in lightweight fallback YAML parser for profile.md (works offline / zero dependency)
+function fallbackYamlParser(yamlText) {
+  const result = { links: {}, interests: [] };
+  const lines = yamlText.split(/\r?\n/);
+  let currentKey = null;
+
+  for (let rawLine of lines) {
+    const line = rawLine.trimEnd();
+    if (!line || line.trim().startsWith('#')) continue;
+
+    // Check sub-items of links or interests
+    if (currentKey === 'links') {
+      const subMatch = line.match(/^\s{2,}([a-zA-Z0-9_-]+):\s*(.*)$/);
+      if (subMatch) {
+        result.links[subMatch[1]] = subMatch[2].replace(/^['"]|['"]$/g, '').trim();
+        continue;
+      }
+    } else if (currentKey === 'interests') {
+      const itemMatch = line.match(/^\s*-\s+(.*)$/);
+      if (itemMatch) {
+        result.interests.push(itemMatch[1].replace(/^['"]|['"]$/g, '').trim());
+        continue;
+      }
+    }
+
+    // Top-level key: value
+    const topMatch = line.match(/^([a-zA-Z0-9_-]+):\s*(.*)$/);
+    if (topMatch) {
+      const key = topMatch[1];
+      const val = topMatch[2].trim();
+      currentKey = key;
+
+      if (val === '' || val === '|' || val === '>') {
+        // Multi-line or nested object/array
+        if (key === 'links') result.links = result.links || {};
+        if (key === 'interests') result.interests = result.interests || [];
+      } else {
+        result[key] = val.replace(/^['"]|['"]$/g, '');
+      }
+    }
+  }
+
+  return result;
 }
 
 // Split Front-Matter (YAML) and Markdown Body
 function parseFrontMatter(text) {
   if (!text) return { attributes: {}, body: '' };
-  
+
   const trimmed = text.trim();
-  if (trimmed.startsWith('---')) {
-    const match = trimmed.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
-    if (match) {
+  // Matches --- at the start followed by anything until the next ---
+  const match = trimmed.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---\s*[\r\n]*([\s\S]*)$/);
+  
+  if (match) {
+    const yamlPart = match[1];
+    const bodyPart = (match[2] || '').trim();
+
+    let attributes = null;
+    if (typeof jsyaml !== 'undefined' && jsyaml.load) {
       try {
-        const attributes = typeof jsyaml !== 'undefined' ? jsyaml.load(match[1]) : {};
-        return { attributes: attributes || {}, body: match[2].trim() };
+        attributes = jsyaml.load(yamlPart);
       } catch (e) {
-        console.error('YAML parse error in frontmatter:', e);
+        console.warn('jsyaml parsing failed, falling back to built-in parser:', e);
       }
     }
+
+    if (!attributes || typeof attributes !== 'object') {
+      attributes = fallbackYamlParser(yamlPart);
+    }
+
+    return { attributes: attributes || {}, body: bodyPart };
   }
+
   return { attributes: {}, body: text };
 }
 
 // 1. Render Profile (content/profile.md)
 async function renderProfile() {
   const md = await fetchMarkdown('content/profile.md');
-  if (!md) return;
+  if (!md) {
+    console.error('Failed to load content/profile.md');
+    return;
+  }
 
   const { attributes: data, body } = parseFrontMatter(md);
   const currentYear = new Date().getFullYear();
@@ -406,7 +468,7 @@ async function renderServices() {
 
 // Global bootstrap
 document.addEventListener('DOMContentLoaded', async () => {
-  // Execute all renders in parallel for maximum speed
+  // Execute all renders in parallel
   await Promise.all([
     renderProfile(),
     renderNews(),
