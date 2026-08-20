@@ -55,12 +55,16 @@ const PROFILE_DATA = {
       content: "🎓 Commenced my Ph.D. research in Robotics at the <strong>Intelligent Automation Centre (IAC)</strong>, Loughborough University."
     },
     {
+      date: "[02/2025]",
+      content: "📄 Our paper on <em>Target Localization and Following Based on LiDAR and Ultra-Wideband Ranging with Consideration of Target Visibility</em> was accepted in <strong>IEEE IROS 2025</strong>."
+    },
+    {
       date: "[06/2024]",
       content: "🎓 Successfully graduated with my Master's Degree in Control Science and Engineering from Southwest University of Science and Technology."
     },
     {
       date: "[03/2024]",
-      content: "📄 Our paper on <em>Reconfigurable Multi-Robot Formation via UWB Ranging</em> was published in <strong>IEEE Control Systems Letters (L-CSS)</strong>."
+      content: "📄 Our paper on <em>Reconfigurable Multi-Robot Formation via Ultra-Wideband Ranging in Unknown Environments</em> was published in <strong>IEEE Control Systems Letters (L-CSS)</strong>."
     },
     {
       date: "[12/2023]",
