@@ -1,4 +1,4 @@
-### Loughborough University
+### Loughborough University (拉夫堡大学)
 - **Degree:** Doctor of Philosophy - PhD, Robotics / Mechanical and Manufacturing Engineering
 - **Period:** Oct 2025 – Jun 2029
 - **Detail:** Intelligent Automation Centre (IAC)
