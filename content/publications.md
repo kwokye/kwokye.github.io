@@ -4,7 +4,7 @@
 - **VenueDetail:** 19 – 25 October, 2025, Hangzhou, China
 - **Links:** [[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11246388)]
 ```bibtex
-@INPROCEEDINGS{11246388,
+@INPROCEEDINGS{lin2025target,
   author={Guo, Lin and Liu, Ran and Cao, Zhiqiang and Lau, Billy Pik Lik and Tan, U-Xuan and Yuen, Chau},
   booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
   title={Target Localization and Following Based on LiDAR and Ultra-Wideband Ranging with Consideration of Target Visibility}, 
@@ -49,21 +49,5 @@
   pages={2613--2621},
   year={2024},
   doi={10.13195/j.kzyjc.2023.0134}
-}
-```
-
-### Moving Object Localization Based on the Fusion of Ultra-WideBand and LiDAR with a Mobile Robot
-- **Authors:** Muhammad Shalihan, Zhiqiang Cao, K. Pongsirijinda, **Lin Guo**, B. P. L. Lau, Ran Liu, Chau Yuen, U-X. Tan
-- **Venue:** **IEEE ROBIO 2023**
-- **VenueDetail:** IEEE International Conference on Robotics and Biomimetics
-- **Links:** [[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10354898)], [[arXiv](https://arxiv.org/pdf/2310.10289)]
-```bibtex
-@inproceedings{shalihan2023moving,
-  title={Moving Object Localization Based on the Fusion of Ultra-WideBand and LiDAR with a Mobile Robot},
-  author={Shalihan, Muhammad and Cao, Zhiqiang and Pongsirijinda, K and Guo, Lin and Lau, BPL and Liu, Ran and Yuen, Chau and Tan, U-X},
-  booktitle={2023 IEEE International Conference on Robotics and Biomimetics (ROBIO)},
-  pages={1--6},
-  year={2023},
-  organization={IEEE}
 }
 ```

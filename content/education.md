@@ -1,7 +1,7 @@
-### Loughborough University
+### Loughborough University (拉夫堡大学)
 - **Degree:** Doctor of Philosophy - PhD, Robotics / Mechanical and Manufacturing Engineering
-- **Period:** Oct 2025 – Jun 2029
-- **Detail:** Intelligent Automation Centre (IAC)
+- **Period:** Oct 2025 – Present
+- **Detail:** Wolfson School of Mechanical, Electrical and Manufacturing Engineering, Intelligent Automation Centre (IAC)
 - **Badge:** LU
 - **BadgeColor:** bg-purple-900 text-white
 

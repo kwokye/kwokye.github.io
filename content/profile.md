@@ -17,11 +17,11 @@ interests:
   - SLAM
   - Multi-Sensor Fusion
   - Multi-Robot Collaboration
-  - Human-Robot Interaction (HRI)
+  - Human-Robot Interaction
 ---
 
 I am currently a Ph.D. researcher in Mechanical and Manufacturing Engineering (Robotics) at the [Intelligent Automation Centre (IAC)](https://www.lboro.ac.uk/schools/meme/research-and-innovation/research-groups/intelligent-automation/), **Loughborough University**, United Kingdom.
 
-My doctoral research is focused on **autonomous in-situ metrology systems of complex freeform surfaces with mobile robotic platforms in large-scale advanced manufacturing**.
+My doctoral research is focused on **autonomous metrology systems of complex freeform surfaces with mobile robotic platforms in large-scale advanced manufacturing**.
 
-Prior to joining Loughborough, I received my M.Eng. and B.Eng. degrees from Southwest University of Science and Technology. My previous research investigated **multi-sensor fusion (LiDAR, UWB, RFID, Vision)**, **reconfigurable multi-robot formation control**, and **human-robot collaboration (HRC)**.
+Prior to joining Loughborough, I received my M.Eng. and B.Eng. degrees from Southwest University of Science and Technology, Sichuan, China. My previous research investigated **multi-sensor fusion**, **reconfigurable multi-robot control**, and **human-robot collaboration**.
