@@ -156,7 +156,7 @@ const PROFILE_DATA = {
   // ------------------------------------------------------------------------
   education: [
     {
-      institution: "Loughborough University",
+      institution: "Loughborough University (拉夫堡大学)",
       logoBadge: "LU",
       badgeColor: "bg-purple-900 text-white",
       degree: "Doctor of Philosophy - PhD, Robotics / Mechanical and Manufacturing Engineering",
