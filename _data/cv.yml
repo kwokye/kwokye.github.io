@@ -1,0 +1,146 @@
+cv:
+  name: Lin Guo (郭林)
+  label: Ph.D. Researcher in Robotics
+  email: linkwok0810@gmail.com
+  location: Loughborough, UK / Mianyang, China
+  image: ""
+  summary: Ph.D. researcher in Mechanical and Manufacturing Engineering (Robotics) at Loughborough University, focusing on autonomous in-situ metrology, SLAM, multi-sensor fusion, and multi-robot systems.
+
+  social_networks:
+    - network: GitHub
+      username: kwokye
+    - network: LinkedIn
+      username: lin-lboro
+
+  sections:
+    Education:
+      - institution: Loughborough University
+        location: Loughborough, Leicestershire, UK
+        url: https://www.lboro.ac.uk/schools/meme/research-and-innovation/research-groups/intelligent-automation/
+        area: Mechanical and Manufacturing Engineering (Robotics)
+        studyType: Doctor of Philosophy (Ph.D.)
+        start_date: 2025-10
+        end_date: 2029-06
+        highlights:
+          - "Intelligent Automation Centre (IAC)"
+          - "Doctoral Research: Autonomous in-situ metrology systems of complex freeform surfaces with mobile robotic platforms in large-scale advanced manufacturing."
+
+      - institution: Southwest University of Science and Technology
+        location: Mianyang, Sichuan, China
+        area: Control Science and Engineering
+        studyType: Master of Engineering (M.S.)
+        start_date: 2021-09
+        end_date: 2024-07
+        score: "GPA: 3.93 / 5.0 (Top 15%, Ranking: 6/51)"
+        courses: "Linear System Theory (96/100), Computer Communications and Networks (95/100), Pattern Recognition (93/100), Machine Learning (93/100)"
+        highlights:
+          - "Robot Technology Used for Special Environment Key Laboratory of Sichuan Province"
+          - "Thesis: Research on Target Localization and Robot Following Method Based on LiDAR and UWB"
+
+      - institution: Southwest University of Science and Technology
+        location: Mianyang, Sichuan, China
+        area: Electronic and Information Engineering
+        studyType: Bachelor of Engineering (B.S.)
+        start_date: 2017-09
+        end_date: 2021-07
+        score: "GPA: 3.59 / 5.0 (Top 10%, Ranking: 12/156)"
+        courses: "Digital Electronic Technology (99/100), Circuit Analysis Fundamentals (96/100), Digital Signal Processing (96/100), Signals and Systems (95/100), Communication Circuit (94/100)"
+        highlights:
+          - "Outstanding Engineer Education and Training Program by the Ministry of Education of China"
+
+    Experience:
+      - company: Southwest Automation Research Institute
+        position: Principal Project Researcher
+        location: Mianyang, Sichuan, China
+        start_date: 2022-01
+        end_date: 2024-12
+        summary: "Target localization and following for quadruped robots in unknown environments"
+        highlights:
+          - "Infrastructure-free and model-free target localization with UWB ranging, IMU, LiDAR data, and sequence matching techniques."
+          - "Robot path planning with DWA framework and 3D pointcloud obstacle avoidance."
+
+      - company: Sichuan Science and Technology Program
+        position: Student Researcher
+        location: Mianyang, Sichuan, China
+        start_date: 2023-01
+        end_date: 2024-07
+        summary: "Research on key technology of robotic multi-modal environment map construction for large-scale urban buildings"
+        highlights:
+          - "SLAM for large scenes using sequences of Wi-Fi fingerprint to enhance mapping efficiency."
+          - "Improved mapping quality using general graph optimization fusing Wi-Fi and LiDAR."
+          - "Relative localization for multi-robot systems using odometry and UWB ranging based on nonlinear optimization."
+
+      - company: Sichuan Science and Technology Program
+        position: Student Researcher
+        location: Mianyang, Sichuan, China
+        start_date: 2021-01
+        end_date: 2022-12
+        summary: "Key technology research on indoor map construction of mobile robot based on UWB and LiDAR fusion"
+        highlights:
+          - "Enhanced localization of mobile robots in indoor environments using UWB and LiDAR sensors with graph-based optimization and submap-based loop closure."
+          - "Indoor environment map construction using UWB and LiDAR sensors."
+
+      - company: Sichuan Fude Robot Co., Ltd.
+        position: SLAM Engineer Intern
+        location: Chengdu, Sichuan, China
+        start_date: 2021-06
+        end_date: 2021-09
+        summary: "R&D of restaurant delivery robots"
+        highlights:
+          - "Developed automatic charging function using LiDAR feature of the charger and machine learning technique (SVM)."
+          - "Tested navigation and localization capabilities of delivery robots in indoor environments with table legs."
+          - "Developed facial recognition for human-robot interaction with OpenCV."
+
+      - company: National Natural Science Foundation of China (NSFC)
+        position: Student Researcher
+        location: Mianyang, Sichuan, China
+        start_date: 2022-01
+        end_date: 2024-07
+        summary: "Autonomous mobile robot-based nuclear radiation hotspots localization"
+        highlights:
+          - "Robot pose estimation with particle filter and search for radioactive hotspots with adaptive step pacing control strategy."
+
+    Awards:
+      - title: Chinese National Encouragement Scholarship (国家励志奖学金 / 国家奖学金)
+        date: 2020
+      - title: Outstanding Graduate of Southwest University of Science and Technology
+        date: 2021
+      - title: A-level Certificate of Comprehensive Quality of College Students of Sichuan Province
+        date: 2021
+      - title: The 3rd Sichuan University Student Robotics Competition - Second Prize (Team Leader)
+        date: 2018
+      - title: China Graduate Electronics Design Contest (Southwest Region) - Second Prize
+        date: 2022
+      - title: China Graduate Electronics Design Contest (Southwest Region) - Second Prize
+        date: 2023
+      - title: SWUST Graduate Student Academic Scholarship - Second Prize
+        date: 2023
+      - title: SWUST Graduate Student Academic Scholarship - Third Prize
+        date: 2022
+
+    Skills:
+      - name: Programming & Tools
+        keywords: "C++ (ROS/ROS2), Python, MATLAB, OpenCV, Ceres Solver, g2o, Eigen, libSVM"
+      - name: Algorithms & Robotics
+        keywords: "SLAM, Sensor Fusion, Extended Kalman Filter (EKF), Particle Filter, Graph Optimization, Non-linear Optimization, Autonomous Navigation, DWA"
+
+    Languages:
+      - name: Mandarin Chinese
+        summary: "Native speaker"
+      - name: English
+        summary: "IELTS 6.5 (Listening 7.0, Reading 7.0, Writing 6.0, Speaking 6.0)"
+
+    Interests:
+      - name: Robotics & Automation
+        keywords: "Autonomous In-situ Metrology, Fringe Projection Profilometry, SLAM, Multi-Robot Systems, Human-Robot Collaboration, Navigation"
+
+    References:
+      - name: Dr. Ran Liu (Master's Degree Supervisor)
+        position: Nanyang Technological University
+        contact: ran.liu@ntu.edu.sg
+      - name: Dr. Zhiqiang Cao
+        position: Singapore University of Technology and Design
+        contact: zhiqiang_cao@mymail.sutd.edu.sg
+      - name: Prof. Yufeng Xiao
+        position: Southwest University of Science and Technology
+        contact: xiaoyf_swit1@163.com
